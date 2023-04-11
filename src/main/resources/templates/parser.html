@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bernatsky Parser</title>
+</head>
+
+<body style="background: lightgrey">
+<h2 th:text="${parserDesc}"></h2>
+<h2 th:text="${parserNotification}" style="font-size: 24px; color: red"></h2>
+<form action="/injection" method="POST" style="text-align: center">
+  <label for="name" style="font-size: 25px">Введіть що шукати на сайті Rozetka</label>
+  <br>
+  <br>
+  <input type="text" id="name" name="name" style="padding: 10px; width:175px; border: 1px solid black">
+  <br>
+  <br>
+  <input type="submit" id="button" value="ШУКАТИ" style="border: 1px solid black; padding: 8px; width:155px; cursor: pointer;">
+</form>
+</body>
+
+</html>

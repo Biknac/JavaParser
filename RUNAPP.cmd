@@ -1,0 +1,1 @@
+java -jar Bernatsky_122-20sk1_Parser-0.0.1-SNAPSHOT.jar
